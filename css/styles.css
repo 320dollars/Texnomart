@@ -24,9 +24,51 @@ body {
 
 .logo-header {
   background-color: #ee3643;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow:inset 0 -5px 0px rgba(181, 41, 51, 0.75);
 }
 
-.logo-header span {
+.logo-header a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
+}
+
+.logo-header:hover, .logo-header:focus{
+  background-color: #ca2c37;
+}
+
+.logo-header:active {
+  background-color: #ba2732;
+}
+
+.top-header input {
+  border: none;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: inherit;
+  color: inherit;
+  width: 240px;
+  margin-left: 230px;
+  padding: 10px 0px 15px 50px;
+  background-image: url("images/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+}
+
+.top-header input:hover {
+  background-color: #212a3a;
+}
+
+.top-header li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+  line-height: 18px;
+  width: 140px;
 }
