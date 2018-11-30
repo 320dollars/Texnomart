@@ -12,6 +12,7 @@ body {
 .top-header {
   background-color: #293449;
   display: flex;
+  max-height: 40px;
 }
 
 .container {
@@ -157,16 +158,16 @@ body {
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
+  width: 200px;
 }
 
 .bot-header span {
-  width: 270px;
-  height: 45px;
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 0.2px;
   border: 3px solid #ffffff;
+  padding: 10px 50px 10px 70px;
 }
 
 .address {
@@ -176,7 +177,10 @@ body {
 }
 
 .enter{
+  display: flex;
   list-style: none;
+  width: 280px;
+  justify-content: space-between;
 }
 
 .enter a {
@@ -186,4 +190,37 @@ body {
   font-size: 21px;
   line-height: 21px;
   padding: 10px 25px 10px 25px;
+}
+
+.with-icon {
+  padding-left: 50px;
+}
+
+.header-mid-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 273px;
+}
+
+.header-mid-box p {
+  margin-top: 3px;
+}
+
+.bot-header nav ul {
+  display: flex;
+  width: 940px;
+  background-color: #32425c;
+}
+
+.bot-header nav li {
+  list-style: none;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 20px 30px 20px 30px;
+}
+
+.bot-header nav a {
+  color: #ffffff;
+  text-decoration: none;
 }
