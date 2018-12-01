@@ -24,6 +24,7 @@ body {
 }
 
 .logo-header {
+  z-index: 1;
   left: 10px;
   position: absolute;
   background-color: #ee3643;
@@ -151,6 +152,9 @@ body {
 
 .bot-header {
   background-color: #f3f7f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .bot-header p:first-child {
@@ -159,15 +163,22 @@ body {
   color: #ee3643;
   font-style: italic;
   width: 200px;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .bot-header span {
+  background-image: url("images/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 0.2px;
   border: 3px solid #ffffff;
   padding: 10px 50px 10px 70px;
+  margin-top: 40px;
 }
 
 .address {
@@ -181,6 +192,7 @@ body {
   list-style: none;
   width: 280px;
   justify-content: space-between;
+  margin-top: 53px;
 }
 
 .enter a {
@@ -189,11 +201,34 @@ body {
   background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
+}
+
+.without-icon {
   padding: 10px 25px 10px 25px;
 }
 
 .with-icon {
-  padding-left: 50px;
+  background-image: url("images/icon-login.svg");
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding: 10px 25px 10px 45px;
+}
+
+.enter a:hover {
+  color: #ee3643;
+}
+
+.with-icon:hover {
+  background-image: url("images/icon-login-hover.svg");
+}
+
+.enter a:active {
+  color: #b2b2b2;
+  opacity: 0.7;
+}
+
+.with-icon:active {
+  background-image: url("images/icon-login.svg");
 }
 
 .header-mid-box {
@@ -211,6 +246,10 @@ body {
   display: flex;
   width: 940px;
   background-color: #32425c;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow:inset 0 -5px 0px #293449;
+  margin-bottom: 70px;
 }
 
 .bot-header nav li {
@@ -220,7 +259,159 @@ body {
   padding: 20px 30px 20px 30px;
 }
 
+.bot-header nav li:hover {
+  background-color: #293449;
+}
+
+.bot-header nav li:active {
+  background-color: #1d2739;
+  opacity: 0.5;
+}
+
 .bot-header nav a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+header {
+  background-color: #f3f7f9;
+}
+
+/*main*/
+
+.promo {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.promo span {
+  padding: 20px 165px 20px 25px;
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+  font-weight: bold;
+}
+
+.promo a {
+  padding: 10px 25px 10px 25px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-right: 140px;
+  margin-left: 20px;
+  border-radius: 3px;
+}
+
+.materials {
+  background-color: #ffbf47;
+  background-image: url("images/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 210px 30px;
+}
+
+.materials a {
+  background-color: #dda028;
+}
+
+.tool {
+  background-color: #3bbce3;
+  background-image: url("images/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 195px 35px;
+}
+
+.tool a {
+  background-color: #35a9cc;
+}
+
+.equipment {
+  background-color: #dc91d8;
+  background-image: url("images/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 190px 30px;
+}
+
+.equipment a {
+  background-color: #c682c2;
+}
+
+.special {
+  background-color: #8ed78f;
+  background-image: url("images/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 195px 25px;
+}
+
+.special span {
+  padding: 20px 160px 20px 25px;
+}
+
+.special a {
+  background-color: #80c180;
+}
+
+.deliver {
+  background-color: #ffc047;
+  background-image: url("images/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 190px 30px;
+}
+
+.deliver a{
+  background-color: #e5ac40;
+}
+
+.slaider {
+
+  width: 620px;
+  height: 265px;
+  background-image: url("images/bosch-top-img.jpg");
+}
+
+.slaider span {
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 25px;
+  margin-top: 20px;
+}
+
+.slaider p {
+  font-family: "PTSans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 25px;
+  margin-top: 0px;
+}
+
+.slaider a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 45px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-top: 120px;
+}
+
+.second-slaid {
+  position: absolute;
+}
+
+.layer {
+  background-image: url("Layer 99.png");
 }
