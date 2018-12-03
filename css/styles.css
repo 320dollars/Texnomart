@@ -322,8 +322,26 @@ header {
   margin-left: 10px;
 }
 
+.materials::after{
+  content: "";
+  background: url("images/new flag.png") no-repeat;
+  position:absolute;
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 240px;
+}
+
 .materials a {
-  background-color: #dda028;
+  background-color: rgba(261, 160, 40, 0.7);
+}
+
+.materials a:hover {
+  background-color: rgba(236, 135, 15, 0.8);
+}
+
+.materials a:active {
+  background-color: rgba(211, 110, 0, 0.9);
 }
 
 .tool {
@@ -336,7 +354,15 @@ header {
 }
 
 .tool a {
-  background-color: #35a9cc;
+  background-color: rgba(53, 169, 204, 0.7);
+}
+
+.tool a:hover {
+  background-color: rgba(28, 134, 179, 0.8);
+}
+
+.tool a:active {
+  background-color: rgba(3, 109, 154, 0.9);
 }
 
 .equipment {
@@ -349,7 +375,15 @@ header {
 }
 
 .equipment a {
-  background-color: #c682c2;
+  background-color: rgba(198, 130, 194, 0.7);
+}
+
+.equipment a:hover {
+  background-color: rgba(173, 105, 169, 0.8);
+}
+
+.equipment a:active {
+  background-color: rgba(148, 80, 144, 0.9);
 }
 
 .special {
@@ -366,7 +400,15 @@ header {
 }
 
 .special a {
-  background-color: #80c180;
+  background-color: rgba(128, 193, 128, 0.7);
+}
+
+.special a:hover {
+  background-color: rgba(103, 168, 103, 0.8);
+}
+
+.special a:active {
+  background-color: rgba(78, 143, 78, 0.9);
 }
 
 .deliver {
@@ -378,7 +420,15 @@ header {
 }
 
 .deliver a{
-  background-color: #e5ac40;
+  background-color: rgba(229, 172, 64, 0.7);
+}
+
+.deliver a:hover {
+  background-color: rgba(204, 147, 39, 0.8);
+}
+
+.deliver a:active {
+  background-color: rgba(179, 122, 14, 0.9);
 }
 
 .slaider {
@@ -421,6 +471,15 @@ header {
   text-transform: uppercase;
   left: 25px;
   top: 205px;
+  z-index: 1;
+}
+
+.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover {
+  background-color: #ca2c37;
+}
+
+.slaider .btn:active {
+  background-color: #ba2732;
 }
 
 .slaider .next {
@@ -432,6 +491,7 @@ header {
   width: 25px;
   height: 45px;
   color: transparent;
+  z-index: 1;
 }
 
 .slaider .previous {
@@ -443,6 +503,7 @@ header {
   width: 25px;
   height: 45px;
   color: transparent;
+  z-index: 1;
 }
 
 .first-radio {
@@ -466,4 +527,204 @@ header {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-bottom: 55px;
+}
+
+.top-tovats, .top-manufacturers {
+  display: flex;
+  background-color: #f9f5f0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.top-tovats h2, .top-manufacturers h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.top-tovats a, .top-manufacturers a {
+  align-self: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 45px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-left: 395px;
+}
+
+.top-manufacturers a {
+  margin-left: 313px;
+  margin-right: 25px;
+}
+
+.box-tovats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tovat {
+  width: 220px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  min-height: 320px;
+}
+
+.tovat:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.special-tovat b {
+  margin-bottom: 20px;
+}
+
+.special-tovat::after{
+  content: "";
+  background: url("images/new flag.png") no-repeat;
+  position:absolute;
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 160px;
+}
+
+.tovat img {
+  margin-top: 40px;
+  margin-bottom: auto;
+}
+
+.tovat span {
+  font-family: "PTSans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #aaaaaa;
+  text-decoration: line-through;
+
+}
+
+.tovat b {
+  font-family: "PTSans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.tovat .price {
+  text-decoration: none;
+  color: #ffffff;
+  background-image: url("images/btn copy 14.png");
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.tovat .btn-tovat {
+  position: absolute;
+  display: none;
+  top: 50px;
+  border: none;
+  left: 40px;
+  width: 135px;
+  height: 40px;
+  background-color: #63a63e;
+  border-color: #63a63e;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  color: inherit;
+  text-transform: uppercase;
+  box-shadow:inset 0 -3px 0px #367315;
+}
+
+.tovat .buy {
+  background-image: url("images/icon-buy.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.buy:hover {
+  background-image: url("images/cart-icon-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.tovat .bookmark {
+  width: 132px;
+  height: 37px;
+  top: 95px;
+  left: 40px;
+  background-color: #ffffff;
+  color: #32425c;
+  border: 3px solid #64a63f;
+  box-shadow:none;
+}
+
+.bookmark:hover {
+  color: #32425c;
+  border-color: #32425c;
+}
+
+.bookmark:active {
+  color: rgba(193, 198, 206, 0.7);
+  border-color: rgba(193, 198, 206, 0.7);
+}
+
+.tovats {
+  display: flex;
+  flex-direction: column;
+}
+
+.manufacturers-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 85px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.manufucturer {
+  width: 220px;
+  border: 1px solid #eaeaea;
+  min-height: 145px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.manufucturer:not(.fix-box) {
+  margin-right: 16px;
+}
+
+.manufucturer:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.manufucturer:active {
+  box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
