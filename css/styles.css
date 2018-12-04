@@ -23,7 +23,7 @@ body {
   margin-right: auto;
 }
 
-.logo-header {
+.logo-header, .logo-footer {
   z-index: 1;
   left: 10px;
   position: absolute;
@@ -35,7 +35,7 @@ body {
   box-shadow:inset 0 -5px 0px rgba(181, 41, 51, 0.75);
 }
 
-.logo-header a {
+.logo-header a, .logo-footer a {
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
@@ -474,11 +474,11 @@ header {
   z-index: 1;
 }
 
-.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover {
+.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover  {
   background-color: #ca2c37;
 }
 
-.slaider .btn:active {
+.slaider .btn:active, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover {
   background-color: #ba2732;
 }
 
@@ -546,7 +546,7 @@ header {
   margin-left: 30px;
 }
 
-.top-tovats a, .top-manufacturers a {
+.top-tovats a, .top-manufacturers a, .dop-content a, .info-company a, .contacts a {
   align-self: center;
   text-decoration: none;
   color: inherit;
@@ -727,4 +727,168 @@ header {
 .manufucturer:active {
   box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   opacity: 0.3;
+}
+
+.servises {
+  background-color: #f5f8fa;
+  align-items: flex-start;
+}
+
+.top-servises {
+  width: 400px;
+  position: absolute;
+}
+
+.dop-content {
+  width: 620px;
+  margin-top: 235px;
+  margin-left: 400px;
+  min-height: 285px;
+}
+
+.delivery {
+  background: url("images/Layer 131.png") no-repeat 100% 20%, url("images/Layer 121-d.png") no-repeat 100% 110%;
+}
+
+.garanties {
+  display: none;
+  background: url("images/Layer 130.png") no-repeat 100% 50%, url("images/Layer 121-g.png") no-repeat 100% -250%;
+}
+
+.credit {
+  display: none;
+    background: url("images/Layer 119.png") no-repeat 100% 50%, url("images/Layer 121.png") no-repeat 100% -55%;
+}
+
+.top-servises h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+
+.top-servises p, .dop-content p {
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.bot-servises select {
+  position: absolute;
+  top: 235px;
+  left: 10px;
+}
+
+.bot-servises option {
+  background-color: #32425c;
+  width: 220px;
+  border-top: 1px solid #4d637b;
+}
+
+.bot-servises option{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 15px 25px 25px;
+}
+
+.bot-servises option:hover {
+  background-color: #293449;
+}
+
+.dop-content h4 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.dop-content p {
+  margin-right: 345px;
+  margin-left: 0px;
+}
+
+.dop-content a {
+  margin-left: 0;
+}
+
+.info-company {
+  width: 540px;
+  margin-top: 75px;
+  padding-right: 20px;
+}
+
+.info-company h3, .contacts h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.info-company p, .contacts p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.info-company li {
+  position: relative;
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.info-company li::before {
+  content: "";
+  position: absolute;
+  background-color: #ee3643;
+  height: 2px;
+  width: 25px;
+  top: 50%;
+  left: -35px;
+}
+
+.info-company a {
+  position: absolute;
+  top: 110%;
+  margin-left: 10px;
+}
+
+.contacts {
+  margin-top: 75px;
+  width: 300px;
+  margin-left: 90px;
+  margin-right: 10px;
+}
+
+.contacts p {
+  margin-right: 120px;
+  margin-bottom: 30px;
+}
+
+.contacts a {
+  position: absolute;
+  top: 110%;
+  margin-left: 0px;
+}
+
+/*footer*/
+
+.top-footer {
+  margin-top: 165px;
+  background-color: #32425c;
+}
+
+.top-footer .logo-footer {
+  width: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
