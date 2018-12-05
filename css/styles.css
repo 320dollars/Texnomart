@@ -43,7 +43,7 @@ body {
   line-height: 24px;
 }
 
-.logo-header:hover, .logo-header:focus{
+.logo-header:hover, .logo-header:focus, .logo-footer:hover, .logo-footer:focus {
   background-color: #ca2c37;
 }
 
@@ -882,13 +882,149 @@ header {
 
 /*footer*/
 
+.footer {
+  display: block;
+}
+
 .top-footer {
+  display: flex;
+  flex-direction: column;
   margin-top: 165px;
   background-color: #32425c;
 }
 
 .top-footer .logo-footer {
+  position: absolute;
+  top: 0%;
+  left: 10px;
   width: 220px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.top-footer ul {
+  position: absolute;
+  width: 570px;
+  margin-left: 390px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.top-footer ul a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.top-footer ul a:hover {
+  text-decoration: underline;
+}
+
+.top-footer ul a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+
+.top-footer p {
+  align-self: flex-start;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 95px;
+  width: 335px;
+  margin-left: 10px;
+  margin-bottom: 65px;
+}
+
+.bot-footer {
+  margin-top: -17px;
+  background-color: #293449;
+  min-height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bot-footer p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-left: 10px;
+  width: 230px;
+}
+
+.bot-footer p a, .under-nav  {
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.bot-footer ul {
+  width: 135px;
+  display: flex;
+  list-style: none;
+  margin-left: 140px;
+  margin-right: 115px;
+}
+
+.bot-footer li {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.bot-footer li:first-child {
+  background: #212a3a url("images/vk-icon.svg") no-repeat 50% 50%;
+}
+
+.bot-footer li:nth-child(2) {
+  background: #212a3a url("images/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.bot-footer li:last-child {
+  background: #212a3a url("images/insta-icon.svg") no-repeat 50% 50%;
+}
+
+.bot-footer li:first-child:hover {
+  background: #ee3643 url("images/vk-icon.svg") no-repeat 50% 50%;
+}
+
+.bot-footer li:nth-child(2):hover {
+  background: #ee3643 url("images/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.bot-footer li:last-child:hover {
+  background: #ee3643 url("images/insta-icon.svg") no-repeat 50% 50%;
+}
+
+.bot-footer li a {
+  font-size: 25px;
+  color: transparent;
+}
+
+.bot-footer p a:hover {
+  text-decoration: underline;
+}
+
+.bot-footer p a:active {
+  text-decoration: none;
+  color: #d43644;
+}
+
+.under-nav {
+  top: 65px;
+  left: 15px;
+}
+
+.conection {
+  width: 140px;
+}
+
+.creater {
+  width: 115px;
 }
