@@ -61,7 +61,7 @@ body {
   line-height: 18px;
   background-color: inherit;
   color: inherit;
-  width: 220px;
+  width: 240px;
   margin-left: 195px;
   padding: 10px 0px 10px 50px;
   background-image: url("images/icon-search.svg");
@@ -152,6 +152,7 @@ body {
 
 .bot-header {
   background-color: #f3f7f9;
+  width: 960px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -242,14 +243,20 @@ body {
   margin-top: 3px;
 }
 
+.bot-header nav {
+  width: 960px; /*~~~~~~~*/
+}
+
 .bot-header nav ul {
   display: flex;
+  justify-content: space-around;
   width: 940px;
   background-color: #32425c;
   margin-left: 10px;
   margin-right: 10px;
   box-shadow:inset 0 -5px 0px #293449;
   margin-bottom: 70px;
+  padding-left: 0px; /********/
 }
 
 .bot-header nav li {
@@ -372,6 +379,7 @@ header {
   background-position: 190px 30px;
   margin-top: 60px;
   margin-left: 20px;
+  margin-right: 10px;
 }
 
 .equipment a {
@@ -393,6 +401,7 @@ header {
   background-position: 195px 25px;
   margin-top: 20px;
   margin-left: 20px;
+  margin-right: 10px;
 }
 
 .special span {
@@ -417,6 +426,7 @@ header {
   background-repeat: no-repeat;
   background-position: 190px 30px;
   margin-top: -125px;
+  margin-right: 10px;
 }
 
 .deliver a{
@@ -438,6 +448,10 @@ header {
   width: 620px;
   height: 265px;
   background: url("images/layer.png") no-repeat 100%,url("images/Layer 99.png") no-repeat, url("images/bosch-top-img.jpg");
+}
+
+.next-slide {
+  background: url("images/shadow-2.png") no-repeat, url("images/Layer 98.jpg") no-repeat;
 }
 
 .slaider span {
@@ -474,11 +488,11 @@ header {
   z-index: 1;
 }
 
-.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover  {
+.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover, .write-us button:hover {
   background-color: #ca2c37;
 }
 
-.slaider .btn:active, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover {
+.slaider .btn:active, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover, .write-us button:hover {
   background-color: #ba2732;
 }
 
@@ -516,6 +530,10 @@ header {
   position: absolute;
   left: 51%;
   bottom: 35px;
+}
+
+.first-slaid {
+  opacity: 1;
 }
 
 .second-slaid {
@@ -752,12 +770,12 @@ header {
 
 .garanties {
   display: none;
-  background: url("images/Layer 130.png") no-repeat 100% 50%, url("images/Layer 121-g.png") no-repeat 100% -250%;
+  background: url("images/Layer 130.png") no-repeat 100% 50%, url("images/Layer 121-g.png") no-repeat 100% 450%;
 }
 
 .credit {
   display: none;
-    background: url("images/Layer 119.png") no-repeat 100% 50%, url("images/Layer 121.png") no-repeat 100% -55%;
+  background: url("images/Layer 119.png") no-repeat 100% 50%, url("images/Layer 121.png") no-repeat 100% 5900%;
 }
 
 .top-servises h3 {
@@ -815,6 +833,8 @@ header {
 }
 
 .dop-content a {
+  position: absolute;
+  margin-top: 15px;
   margin-left: 0;
 }
 
@@ -822,6 +842,7 @@ header {
   width: 540px;
   margin-top: 75px;
   padding-right: 20px;
+  margin-left: 10px;
 }
 
 .info-company h3, .contacts h3 {
@@ -905,7 +926,7 @@ header {
 .top-footer ul {
   position: absolute;
   width: 570px;
-  margin-left: 390px;
+  margin-left: 370px;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -954,6 +975,8 @@ header {
   line-height: 18px;
   margin-left: 10px;
   width: 230px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .bot-footer p a, .under-nav  {
@@ -965,8 +988,7 @@ header {
   width: 135px;
   display: flex;
   list-style: none;
-  margin-left: 140px;
-  margin-right: 115px;
+  margin: auto 115px auto 175px;
 }
 
 .bot-footer li {
@@ -1018,13 +1040,136 @@ header {
 
 .under-nav {
   top: 65px;
-  left: 15px;
+  left: 10px;
 }
 
 .conection {
   width: 140px;
+  margin-right: 70px;
 }
 
 .creater {
   width: 115px;
+}
+
+/*wtire us*/
+
+.write-us {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 620px;
+  height: 425px;
+  z-index: 1;
+  border-top: 7px solid #ff5257;
+  left: 25%;
+  top: 2520px;
+  box-shadow: 0 20px 40px #000000;
+}
+
+.write-us .exit, .exit-map {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("images/form-2.svg") no-repeat 50% 50%;
+  top: 10px;
+  right: 10px;
+}
+
+.write-us form {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.write-us label {
+  position: absolute;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.write-us input {
+  position: absolute;
+  width: 210px;
+  height: 35px;
+  border: 2px solid #dee3e4;
+  color: #000000;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+.input-one {
+  top: 75px;
+  left: 77px;
+}
+
+.input-two {
+  top:75px;
+  left: 320px;
+}
+
+.label-one {
+  top: 45px;
+  left: 77px;
+}
+
+.label-two {
+  top: 45px;
+  left: 320px;
+}
+
+.label-three {
+  top: 145px;
+  left: 77px;
+}
+
+.write-us textarea {
+  margin-top: 130px;
+  width: 460px;
+  height: 115px;
+  border: 2px solid #dee3e4;
+  color: #000000;
+  border-radius: 3px;
+}
+
+.write-us button {
+  width: 460px;
+  height: 35px;
+  align-self: center;
+  color: inherit;
+  border:none;
+  background-color: #ee3643;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.batton-box {
+  margin-top: 35px;
+  display: flex;
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 110px;
+}
+
+.write-us input:focus, .write-us textarea:focus {
+  outline-color: #ee3643;
+}
+
+.map {
+  position: absolute;
+  top: 2360px;
+  left: 18%;
+  display: none;
+}
+
+.map .exit-map {
+  border: none;
+  top: 20px;
+  right: 20px;
 }
