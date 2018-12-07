@@ -1173,3 +1173,63 @@ header {
   top: 20px;
   right: 20px;
 }
+
+/*catalog*/
+
+.account {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.user {
+  display: flex;
+  width: 280px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 21px;
+  padding-left: 50px;
+  background: url("images/icon-logout-unhover.svg") no-repeat 290px 13px, url("images/icon-user-unhover.svg") no-repeat 15px 10px;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.user a:active {
+  
+}
+
+.user a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.user:hover {
+  background: url("images/icon-logout.svg") no-repeat 290px 13px, url("images/icon-user.svg") no-repeat 15px 10px;
+  background-color: #ffffff;
+}
+
+.account ul {
+  display: flex;
+  color: #3f4e66;
+}
+
+.account li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+.account li {
+  margin-left: 30px;
+}
+
+.account li a {
+  color: #3f4e66;
+}
+
+.account li a:hover {
+  color: #ef5c67;
+}
+
+.account li a:active {
+  color: #3f4e66;
+  opacity: 0.3;
+}
