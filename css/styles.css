@@ -564,7 +564,7 @@ header {
   margin-left: 30px;
 }
 
-.top-tovats a, .top-manufacturers a, .dop-content a, .info-company a, .contacts a {
+.top-tovats a, .top-manufacturers a, .dop-content a, .info-company a, .contacts a:not(.open-map) {
   align-self: center;
   text-decoration: none;
   color: inherit;
@@ -895,7 +895,7 @@ header {
   margin-bottom: 30px;
 }
 
-.contacts a {
+.contacts a:not(.open-map) {
   position: absolute;
   top: 110%;
   margin-left: 0px;
@@ -1067,6 +1067,10 @@ header {
   box-shadow: 0 20px 40px #000000;
 }
 
+.write-us-show {
+  display: block;
+}
+
 .write-us .exit, .exit-map {
   width: 20px;
   height: 20px;
@@ -1166,12 +1170,23 @@ header {
   top: 2360px;
   left: 18%;
   display: none;
+  animation-duration: 3s;
+}
+
+.map-show {
+  display: block;
 }
 
 .map .exit-map {
   border: none;
   top: 20px;
   right: 20px;
+}
+
+@keyframes attemptPopup {
+  to{
+    translateY: -2000px;
+  }
 }
 
 /*catalog*/
@@ -1194,7 +1209,7 @@ header {
 }
 
 .user a:active {
-  
+
 }
 
 .user a {
