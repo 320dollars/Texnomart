@@ -55,33 +55,30 @@
         <h1 class="hidden">Техномарт</h1>
     </header>
     <main>
-      <ul>
-        <li><a href="#">Домашняя</a></li>
+      <ul class="pagenation">
+        <li><a href="#" class="invis">Домашняя</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Перфораторы</a></li>
       </ul>
-      <div class="catalog-title">
-        <h2>Перфораторы</h2>
-      </div>
-      <section>
-        <h3>Фильтр</h3>
+      <section class="filter-box">
+        <h3>Фильтр:</h3>
         <form class="filter" action="index.html" method="post">
           <label for="price-filter">Цена:</label>
-          <input type="range" name="price" value="80" step="1" width="175">
+          <input type="range" name="price" min="0" max="100" value="80" step="1" width="175">
           <label for="manufucturer">Производители:</label>
           <input type="checkbox" name="bosch" value="bosch" checked>
           <input type="checkbox" name="interskol" value="interskol">
           <input type="checkbox" name="makita" value="makita" checked>
           <input type="checkbox" name="dewalt" value="dewalt">
           <input type="checkbox" name="hitachi" value="hitachi">
-          <label for="energi">Питание:</label>
-          <input type="radio" name="energe" value="acc" checked>
+          <input type="radio" name="energe" value="acc" >
           <input type="radio" name="energe" value="set">
+          <label for="energi">Питание:</label>
           <button type="submit" name="button">Показать</button>
         </form>
       </section>
-      <section>
+      <section class="sorting">
         <h3>Сортировка:</h3>
         <ul>
           <li><a href="#">По цене</a></li>
@@ -93,8 +90,9 @@
           <li><a href="#">previous</a></li>
         </ul>
       </section>
-      <section>
-        <div class="box-tovats">
+      <section class="perforators">
+        <h2 class="catalog-title">Перфораторы</h2>
+        <div class="box-tovats-catalog">
           <div class="tovat">
             <img src="images/second-tovat.jpg" alt="Перфоратор BOSCH BFG 3000" width="130" height="110">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
@@ -111,7 +109,7 @@
             <span>30500 Р.</span>
             <span class="price">25500 Р.</span>
           </div>
-          <div class="tovat special-tovat">
+          <div class="tovat without-price">
             <img src="images/fourth-tovat.jpg" alt="Перфоратор BOSCH BFG 2000" width="130" height="110">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
             <button type="button" name="button" class="btn-tovat bookmark">В закладки</button>
@@ -126,7 +124,7 @@
             <span>22500 Р.</span>
             <span class="price">15500 Р.</span>
           </div>
-          <div class="tovat">
+          <div class="tovat special-tovat">
             <img src="images/third-tovat.jpg" alt="Перфоратор BOSCH BFG 6000" width="145" height="130">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
             <button type="button" name="button" class="btn-tovat bookmark">В закладки</button>
@@ -134,14 +132,14 @@
             <span>30500 Р.</span>
             <span class="price">25500 Р.</span>
           </div>
-          <div class="tovat special-tovat">
+          <div class="tovat without-price">
             <img src="images/fourth-tovat.jpg" alt="Перфоратор BOSCH BFG 2000" width="130" height="110">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
             <button type="button" name="button" class="btn-tovat bookmark">В закладки</button>
             <b>Перфоратор BOSCH BFG 2000</b>
             <span class="price">12500 Р.</span>
           </div>
-          <div class="tovat">
+          <div class="tovat special-tovat">
             <img src="images/second-tovat.jpg" alt="Перфоратор BOSCH BFG 3000" width="130" height="110">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
             <button type="button" name="button" class="btn-tovat bookmark">В закладки</button>
@@ -157,7 +155,7 @@
             <span>30500 Р.</span>
             <span class="price">25500 Р.</span>
           </div>
-          <div class="tovat special-tovat">
+          <div class="tovat without-price">
             <img src="images/fourth-tovat.jpg" alt="Перфоратор BOSCH BFG 2000" width="130" height="110">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
             <button type="button" name="button" class="btn-tovat bookmark">В закладки</button>
@@ -166,16 +164,18 @@
           </div>
       </div>
       <ul>
-        <li><a href="#">1</a></li>
+        <li><a href="#" class="page">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
+        <li><a href="#" class="next-btn">Следующая</a></li>
       </ul>
       </section>
-      <section>
+      <section class="about-perforators">
+        <div class="container info-box">
         <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
       </section>
       <footer>
         <div class="top-footer">

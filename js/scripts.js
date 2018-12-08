@@ -4,23 +4,35 @@ var exitPopup = document.querySelector(".exit");
 var buttonMap = document.querySelector(".open-map");
 var map = document.querySelector(".map");
 var exitMap = document.querySelector(".exit-map");
+var tovat = document.querySelectorAll(".tovat");
+var hidButtons = document.querySelectorAll('btv-tovat');
 
-buttonPopup.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.add("write-us-show");
-});
 
-exitPopup.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.remove("write-us-show");
-});
+var slaider = document.querySelector(".slaider");
+var buttonNext = document.querySelector(".next");
+var buttonPrevious = document.querySelector(".previous");
 
-buttonMap.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  map.classList.add("map-show");
-});
+function openThat(nameObj, modalWin, className) {
+  nameObj.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modalWin.classList.add(className);
+  });
+}
 
-exitMap.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  map.classList.remove("map-show");
-});
+function closeThat(nameObj, modalWin, className) {
+  nameObj.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modalWin.classList.remove(className);
+  });
+}
+
+openThat(buttonPopup, popup, "write-us-show");
+openThat(buttonMap, map, "map-show");
+closeThat(exitPopup, popup, "write-us-show");
+closeThat(exitMap, map, "map-show");
+
+for (var i = 0; i < tovat.length; i++) {
+  tovat[i].addEventListener("mouseover", function(){
+    hidButtons.classList.add("show-buttons");
+  });
+}
