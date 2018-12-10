@@ -55,43 +55,75 @@
         <h1 class="hidden">Техномарт</h1>
     </header>
     <main>
+      <div class="container">
       <ul class="pagenation">
         <li><a href="#" class="invis">Домашняя</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Перфораторы</a></li>
       </ul>
+      </div>
+      <div class="container">
+      <h2 class="catalog-title">Перфораторы</h2>
+      </div>
+      <div class="container">
       <section class="filter-box">
         <h3>Фильтр:</h3>
         <form class="filter" action="index.html" method="post">
-          <label for="price-filter">Цена:</label>
-          <input type="range" name="price" min="0" max="100" value="80" step="1" width="175">
-          <label for="manufucturer">Производители:</label>
-          <input type="checkbox" name="bosch" value="bosch" checked>
-          <input type="checkbox" name="interskol" value="interskol">
-          <input type="checkbox" name="makita" value="makita" checked>
-          <input type="checkbox" name="dewalt" value="dewalt">
-          <input type="checkbox" name="hitachi" value="hitachi">
-          <input type="radio" name="energe" value="acc" >
-          <input type="radio" name="energe" value="set">
-          <label for="energi">Питание:</label>
+          <fieldset class="filter-price">
+          <legend>Цена:</legend>
+          <div class="box-range">
+          <input type="range" name="price" min="0" max="100" value="0, 80" step="1" multiple>
+          </div>
+          <output name="result" class="start-price">0</output>
+          <output name="result" class="finish-price">30000</output>
+          </fieldset>
+          <div class="box-makers">
+          <fieldset>
+            <legend>Производители:</legend>
+            <input type="checkbox" id="bosch" name="bosch" value="bosch" checked>
+            <label for="bosch">bosch</label>
+            <input type="checkbox" id="interskol" name="interskol" value="interskol">
+            <label for="interskol">interskol</label>
+            <input type="checkbox" id="makita" name="makita" value="makita" checked>
+            <label for="makita">makita</label>
+            <input type="checkbox" id="dewalt" name="dewalt" value="dewalt">
+            <label for="dewalt">dewalt</label>
+            <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
+            <label for="hitachi">hitachi</label>
+          </fieldset>
+          </div>
+          <div class="box-makers">
+          <fieldset>
+            <legend>Питание:</legend>
+            <input type="radio" id="acc" name="energe" value="acc" checked>
+            <label for="acc">Аккамуляторные</label>
+            <input type="radio" id="set" name="energe" value="set">
+            <label for="set">Сетевые</label>
+          </fieldset>
+         </div>
           <button type="submit" name="button">Показать</button>
         </form>
       </section>
+     </div>
       <section class="sorting">
+        <div class="container">
+        <div class="sorting-box">
         <h3>Сортировка:</h3>
         <ul>
-          <li><a href="#">По цене</a></li>
+          <li><a href="#" id="now-sort">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <ul>
-          <li><a href="#">next</a></li>
-          <li><a href="#">previous</a></li>
+        <ul class="nav-catalog">
+          <li><a class="nav-sorting up" href="#">next</a></li>
+          <li><a class="nav-sorting down" href="#">previous</a></li>
         </ul>
+        </div>
+        </div>
       </section>
       <section class="perforators">
-        <h2 class="catalog-title">Перфораторы</h2>
+        <div class="container">
         <div class="box-tovats-catalog">
           <div class="tovat">
             <img src="images/second-tovat.jpg" alt="Перфоратор BOSCH BFG 3000" width="130" height="110">
@@ -109,7 +141,7 @@
             <span>30500 Р.</span>
             <span class="price">25500 Р.</span>
           </div>
-          <div class="tovat without-price">
+          <div class="tovat without-price special-tovat">
             <img src="images/fourth-tovat.jpg" alt="Перфоратор BOSCH BFG 2000" width="130" height="110">
             <button type="button" name="button" class="btn-tovat buy">Купить</button>
             <button type="button" name="button" class="btn-tovat bookmark">В закладки</button>
@@ -163,6 +195,7 @@
             <span class="price">12500 Р.</span>
           </div>
       </div>
+     </div>
       <ul>
         <li><a href="#" class="page">1</a></li>
         <li><a href="#">2</a></li>
