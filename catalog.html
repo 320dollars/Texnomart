@@ -71,12 +71,14 @@
         <h3>Фильтр:</h3>
         <form class="filter" action="index.html" method="post">
           <fieldset class="filter-price">
-          <legend>Цена:</legend>
+          <legend class="price-range">Цена:</legend>
           <div class="box-range">
-          <input type="range" name="price" min="0" max="100" value="0, 80" step="1" multiple>
+          <input type="range" name="price" min="0" max="100" value="80" step="1">
           </div>
-          <output name="result" class="start-price">0</output>
-          <output name="result" class="finish-price">30000</output>
+          <div class="output-box">
+            <output name="result" class="start-price">0</output>
+            <output name="result" class="finish-price">30000</output>
+          </div>
           </fieldset>
           <div class="box-makers">
           <fieldset>
@@ -123,6 +125,7 @@
         </div>
       </section>
       <section class="perforators">
+        <h2 class="hidden">Товары</h2>
         <div class="container">
         <div class="box-tovats-catalog">
           <div class="tovat">
@@ -245,5 +248,13 @@
         </div>
       </div>
       </footer>
+      <section class="message">
+        <h2>Товар добавлен в корзину!</h2>
+        <div class="message-box">
+        <a href="#" class="form-tovat">Оформить заказ</a>
+        <a href="#" class="continue-buy">Продолжить покупки</a>
+        </div>
+        <button class="exit"></button>
+      </section>
     </main>
     </html>

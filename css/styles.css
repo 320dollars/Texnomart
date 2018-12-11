@@ -488,11 +488,12 @@ header {
   z-index: 1;
 }
 
-.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover, .write-us button:hover {
+
+.slaider .btn:hover, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover, .write-us button:hover, .contacts .popup-write:hover {
   background-color: #ca2c37;
 }
 
-.slaider .btn:active, .top-tovats a:hover, .top-manufacturers a:hover, .info-company a:hover, .contacts a:hover, .write-us button:hover {
+.slaider .btn:active, .top-tovats a:active, .top-manufacturers a:active, .info-company a:active, .contacts a:active, .write-us button:active, .contacts .popup-write:active {
   background-color: #ba2732;
 }
 
@@ -621,7 +622,7 @@ header {
   margin-bottom: auto;
 }
 
-.tovat img:hover {
+.hidden-img {
   opacity: 0;
 }
 
@@ -658,7 +659,6 @@ header {
 
  .btn-tovat {
   position: absolute;
-  display: none;
   top: 50px;
   border: none;
   left: 40px;
@@ -1081,7 +1081,7 @@ header {
   animation-duration: 2s;
 }
 
-.write-us .exit, .exit-map {
+.write-us .exit, .exit-map, .message .exit {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -1181,6 +1181,7 @@ header {
   left: 18%;
   display: none;
   animation-duration: 3s;
+  box-shadow: 0 8px 16px #000000;
 }
 
 .map-show {
@@ -1363,6 +1364,10 @@ header {
   margin-bottom: 15px;
 }
 
+.price-range {
+  margin-bottom: 10px;
+}
+
 .filter-box fieldset {
   border: none;
   margin-left: -10px;
@@ -1372,7 +1377,7 @@ header {
 }
 
 .filter-box fieldset:not(.filter-price) {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .box-range {
@@ -1407,8 +1412,11 @@ input[type="range"]::-webkit-slider-thumb {
   color: #000000;
 }
 
-.finish-price {
-
+.output-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:20px;
 }
 
 input[type='checkbox'] {
@@ -1504,14 +1512,14 @@ input[type='radio']:checked + label::after {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .sorting-box {
   position: relative;
   width: 100%;
   margin-left: 250px;
-  margin-top: -760px;
+  margin-top: -790px;
   margin-right: 10px;
 }
 
@@ -1578,7 +1586,7 @@ input[type='radio']:checked + label::after {
   justify-content: space-between;
   margin-bottom: 50px;
   margin-left: 250px;
-  margin-top: -690px;
+  margin-top: -720px;
 }
 
 .box-tovats-catalog .tovat {
@@ -1661,4 +1669,73 @@ input[type='radio']:checked + label::after {
 
 .info-box {
   display: block;
+}
+
+/*message*/
+
+.message {
+  width: 620px;
+  height: 278px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/form-1.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 55px;
+  box-shadow: 0 20px 40px #000000;
+  position: absolute;
+  top: 410px;
+  left: 25%;
+  display: none;
+}
+
+.message h2 {
+  margin-top: 73px;
+  margin-bottom: 70px;
+  margin-left: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.message-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 110px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.message-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 3px;
+}
+
+.form-tovat {
+  margin-left: 75px;
+}
+
+.continue-buy {
+  margin-right: 75px;
+}
+
+.message .exit {
+  border: none;
+}
+
+.message-box a:hover {
+  background-color: #ee3643;
+  color: #ffffff;
 }

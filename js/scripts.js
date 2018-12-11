@@ -5,7 +5,7 @@ var buttonMap = document.querySelector(".open-map");
 var map = document.querySelector(".map");
 var exitMap = document.querySelector(".exit-map");
 var tovat = document.querySelectorAll(".tovat");
-var hidButtons = document.querySelectorAll('btv-tovat');
+var imgTovat = document.querySelectorAll(".tvt");
 
 
 var slaider = document.querySelector(".slaider");
@@ -32,7 +32,7 @@ closeThat(exitPopup, popup, "write-us-show");
 closeThat(exitMap, map, "map-show");
 
 for (var i = 0; i < tovat.length; i++) {
-  tovat[i].addEventListener("mouseover", function(){
-    hidButtons.classList.add("show-buttons");
-  });
+ tovat[i].addEventListener("mouseover", function(){
+   imgTovat[j].classList.add("hidden-img");
+ });
 }
