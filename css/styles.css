@@ -633,7 +633,6 @@ header {
   font-weight: bold;
   color: #aaaaaa;
   text-decoration: line-through;
-
 }
 
 .tovat b {
@@ -658,6 +657,7 @@ header {
 }
 
  .btn-tovat {
+  display: none;
   position: absolute;
   top: 50px;
   border: none;
@@ -1691,6 +1691,10 @@ input[type='radio']:checked + label::after {
   display: none;
 }
 
+.message-show {
+  display: flex;
+}
+
 .message h2 {
   margin-top: 73px;
   margin-bottom: 70px;
@@ -1738,4 +1742,15 @@ input[type='radio']:checked + label::after {
 .message-box a:hover {
   background-color: #ee3643;
   color: #ffffff;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px);  }
+}
+
+.modal-error {
+   animation-name: shake;
+   animation-duration: 0.6s;
 }
